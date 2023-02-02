@@ -7,12 +7,11 @@ export default function ToDo(props){
                 {toDoList.map((todo, index) => (
                 <li key={index}>
                     {todo}
-                    <button 
-                        type="button" 
-                        onClick={() => toDone(index)}
-                    >
+                    <input 
+                        type="checkbox" 
+                        onChange={() => toDone(index)}
+                    />
                         Done
-                    </button>
                 </li>
                 ))}
             </ul>
