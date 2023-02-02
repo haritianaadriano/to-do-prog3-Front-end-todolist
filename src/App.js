@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={onSubmit}>
         <input 
           value={input} 
           onChange={(e) => setInput(e.target.value)} 
@@ -33,8 +33,11 @@ function App() {
         <button type="submit">add</button>
       </form>
       <div className="container">
-        <ToDo/>
-        <ToDone/>
+        <ToDo 
+          toDoList={toDoList} 
+          toDone={toDone}
+        />
+        <ToDone done={done}/>
       </div>
       </header>
     </div>
