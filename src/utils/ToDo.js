@@ -1,5 +1,4 @@
-export default function ToDo(props){
-    let [toDoList, toDone] = props;
+export default function ToDo({toDoList, toDone}){
     return(
         <>
             <h3>To-do</h3>
@@ -11,7 +10,6 @@ export default function ToDo(props){
                         type="checkbox" 
                         onChange={() => toDone(index)}
                     />
-                        Done
                 </li>
                 ))}
             </ul>

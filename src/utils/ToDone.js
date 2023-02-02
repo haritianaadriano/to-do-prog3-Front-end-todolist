@@ -1,5 +1,4 @@
-export default function ToDone(props){
-    let [done] = props;
+export default function ToDone({done}){
     return(
         <>
             <h3>Done</h3>

@@ -33,11 +33,15 @@ function App() {
         <button type="submit">add</button>
       </form>
       <div className="container">
+        <div className="children">
         <ToDo 
           toDoList={toDoList} 
           toDone={toDone}
         />
-        <ToDone done={done}/>
+        </div>
+        <div className="children">
+          <ToDone done={done}/>
+        </div>
       </div>
       </header>
     </div>
