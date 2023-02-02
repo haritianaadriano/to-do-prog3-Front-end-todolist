@@ -24,9 +24,15 @@ function App() {
     <div className="App">
       <header className="App-header">
       <form onSubmit={handleSubmit}>
-        <input value={input} onChange={(e) => setInput(e.target.value)} />
+        <input 
+          value={input} 
+          onChange={(e) => setInput(e.target.value)} 
+        />
         <button type="submit">add</button>
       </form>
+      <div className="container">
+
+      </div>
       </header>
     </div>
   );
