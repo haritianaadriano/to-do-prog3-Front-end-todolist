@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import ToDo from './utils/ToDo';
 
 function App() {
 
@@ -31,7 +32,7 @@ function App() {
         <button type="submit">add</button>
       </form>
       <div className="container">
-
+        <ToDo/>
       </div>
       </header>
     </div>
