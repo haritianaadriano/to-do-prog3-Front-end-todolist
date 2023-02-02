@@ -5,9 +5,22 @@ import toDone from './utils/toDone';
 
 function App() {
 
-  const [todos, setTodos] = useState([]);
+  const [toDoList, setTodoList] = useState([]);
   const [done, setDone] = useState([]);
   const [input, setInput] = useState("");
+
+  const onSubmit = (event) => {
+    event.preventDefault();
+    setTodoList([...toDoList, input]);
+    setInput("");
+  };
+
+  const toDone = (index) => {
+    const newTodos = [...toDoList];
+    const todo = newTodos.splice(index, 1);
+    setTodoList(newTodos);
+    setDone([...done, ...todo]);
+  };
 
   return (
     <div className="App">
