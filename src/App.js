@@ -5,28 +5,29 @@ import toDone from './utils/toDone';
 
 function App() {
 
+  let array = [];
   const[toDoList, setToDoList] = useState([]);
   const[task, setTask] = useState("");
   const[done, setDone] = useState(false);
 
   function onChange(event){
-    let array = [];
+    setTask(event.target.value);
+  }
+
+  function onPush(){
     let toDoObject = {
       task: task,
       done: done
     }
-
-    setTask(event.target.value);
     
-    array.push(toDoObject);
-    setToDoList(array);
+    task != "" || null ? setToDoList(toDoObject, ...array) : null
   }
 
   return (
     <div className="App">
       <header className="App-header">
-        <input type="text"/>
-        <button onClick={onChange}>add</button>
+        <input type="text" onChange={onChange}/>
+        <button onClick={onPush}>add</button>
         <div className="cage">
           <toDo toDoList={toDoList} setDone={setDone}/>
         </div>
