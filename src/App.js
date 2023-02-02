@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import './App.css';
-import toDo from './utils/toDo';
-import toDone from './utils/toDone';
 
 function App() {
 
@@ -25,7 +23,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        
+      <form onSubmit={handleSubmit}>
+        <input value={input} onChange={(e) => setInput(e.target.value)} />
+        <button type="submit">add</button>
+      </form>
       </header>
     </div>
   );
