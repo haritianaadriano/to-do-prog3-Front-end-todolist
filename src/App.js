@@ -9,14 +9,17 @@ function App() {
   const[task, setTask] = useState("");
   const[done, setDone] = useState(false);
 
-  let toDoObject = {
-    task: task,
-    done: done
-  }
-
   function onChange(event){
+    let array = [];
+    let toDoObject = {
+      task: task,
+      done: done
+    }
+
     setTask(event.target.value);
-    setToDoList([...toDoObject, toDoList]);
+    
+    array.push(toDoObject);
+    setToDoList(array);
   }
 
   return (
