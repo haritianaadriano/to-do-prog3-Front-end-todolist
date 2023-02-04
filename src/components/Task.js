@@ -1,3 +1,5 @@
+import Checkbox from "./CheckBox"
+
 export default function Task({todo, index, toDone}){
     return(
         <div>
@@ -5,9 +7,9 @@ export default function Task({todo, index, toDone}){
                 key={index}
             >
                 {todo}
-                <input 
-                    type="checkbox" 
-                    onChange={() => toDone(index)}
+                <Checkbox
+                    toDone={toDone}
+                    index={index}
                 />
             </li>
         </div>
