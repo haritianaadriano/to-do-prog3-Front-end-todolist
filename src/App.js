@@ -31,7 +31,7 @@ function App() {
           setInput={setInput} 
           onSubmit={onSubmit}
         />
-        <InputApp
+        <ToDoApp
           toDoList={toDoList}
           toDone={toDone}
           done={done}

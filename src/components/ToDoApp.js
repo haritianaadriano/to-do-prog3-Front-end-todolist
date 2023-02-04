@@ -1,5 +1,5 @@
-import ToDo from './components/ToDo';
-import ToDone from './components/ToDone';
+import ToDo from "./ToDo";
+import ToDone from "./ToDone";
 
 export default function ToDoApp({toDoList, toDone, done}){
     return(
