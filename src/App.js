@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import './App.css';
-import ToDo from './components/ToDo';
-import ToDone from './components/ToDone';
+
 import InputApp from './components/InputApp';
+import ToDoApp from './components/ToDoApp';
 
 function App() {
 
@@ -31,19 +31,11 @@ function App() {
           setInput={setInput} 
           onSubmit={onSubmit}
         />
-      <div className="container">
-        <div className="children">
-        <ToDo 
-          toDoList={toDoList} 
+        <InputApp
+          toDoList={toDoList}
           toDone={toDone}
+          done={done}
         />
-        </div>
-        <div className="children">
-          <ToDone 
-            done={done}
-          />
-        </div>
-      </div>
       </header>
     </div>
   );
