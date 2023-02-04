@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import ToDo from './components/ToDo';
 import ToDone from './components/ToDone';
-import Input from './components/Input';
+import InputApp from './components/InputApp';
 
 function App() {
 
@@ -26,15 +26,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <form 
-        onSubmit={onSubmit}
-      >
-        <Input 
+        <InputApp 
           input={input} 
-          setInput={setInput}
+          setInput={setInput} 
+          onSubmit={onSubmit}
         />
-        <button type="submit">add</button>
-      </form>
       <div className="container">
         <div className="children">
         <ToDo 
