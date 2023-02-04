@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './App.css';
-import ToDo from './utils/ToDo';
-import ToDone from './utils/ToDone';
+import ToDo from './components/ToDo';
+import ToDone from './components/ToDone';
+
 
 function App() {
 
