@@ -5,6 +5,7 @@ export default function Task({todo, index, toDone}){
         <div>
             <li 
                 key={index}
+                data-testid="task-id"
             >
                 {todo}
                 <Checkbox
