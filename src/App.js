@@ -26,7 +26,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <form onSubmit={onSubmit}>
+      <form 
+        onSubmit={onSubmit}
+      >
         <Input 
           input={input} 
           setInput={setInput}
