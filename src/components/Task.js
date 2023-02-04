@@ -1,4 +1,4 @@
-export default function Task({todo, index}){
+export default function Task({todo, index, toDone}){
     return(
         <div>
             <li 
