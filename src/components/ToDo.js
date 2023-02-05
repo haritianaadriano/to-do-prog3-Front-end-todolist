@@ -2,11 +2,11 @@ import Task from "./Task"
 
 export default function ToDo({toDoList, toDone}){
     return(
-        <div
-            data-test-id="todo-id"
-        >
+        <div>
             <h3>To-do</h3>
-            <ul>
+            <ul
+                data-test-id="todo-id"
+            >
                 {toDoList.map((todo, index) => (
                     <Task 
                         todo={todo} 
