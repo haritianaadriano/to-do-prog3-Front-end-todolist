@@ -5,7 +5,7 @@ export default function ToDo({toDoList, toDone}){
         <div>
             <h3>To-do</h3>
             <ul
-                data-test-id="todo-id"
+                data-testid="todo-id"
             >
                 {toDoList.map((todo, index) => (
                     <Task 

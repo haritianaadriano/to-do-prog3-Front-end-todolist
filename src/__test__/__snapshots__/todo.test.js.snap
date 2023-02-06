@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todo [snapshot] renders correctly 1`] = `
+<div>
+  <h3>
+    To-do
+  </h3>
+  <ul
+    data-testid="todo-id"
+  >
+    <div>
+      <li
+        data-testid="task-id"
+      >
+        ohatra__1
+        <div>
+          <input
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </div>
+      </li>
+    </div>
+    <div>
+      <li
+        data-testid="task-id"
+      >
+        ohatra__2
+        <div>
+          <input
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </div>
+      </li>
+    </div>
+  </ul>
+</div>
+`;
