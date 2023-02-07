@@ -10,6 +10,13 @@ describe("Task test", () => {
         expect(taskElement).toBeInTheDocument();
     })
 
+    if("[snapshot] Task renders correctly", () => {
+        const renderer = create(<Task todo={todoMock}/>);
+        const json = renderer.toJSON();
+
+        expect(json).toMatchSnapshot();
+    })
+
     it("todo mocking appears in task component", () => {
         render(<Task todo={todoMock} />);
         const taskElement = screen.getByTestId("task-id");
