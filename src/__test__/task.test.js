@@ -5,6 +5,6 @@ describe("Task test", () => {
 
     it("Task appears in document", () => {
         const taskElement = screen.getByTestId("task-id");
-        
+        expect(taskElement).toBeInTheDocument();
     })
 })
