@@ -10,7 +10,9 @@ describe("Task test", () => {
     })
 
     it("todo mocking appears in task component", () => {
-        const taskElement = render(<Task todo = {todoMock}/>);
-        expect(taskElement).toHaveTextContent(todoMock);
+        render(<Task todo={todoMock} />);
+        const taskElement = screen.getByTestId("task-id");
+
+        expect(taskElement.textContent).toHaveTextContent(todoMock);
     })
 })
