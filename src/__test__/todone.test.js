@@ -12,6 +12,13 @@ describe("To Done test", () => {
         expect(todoneElement).toBeInTheDocument();
     })
 
+    if("[snapshot] ToDone rendres correctly", () => {
+        const renderer = create(<ToDone done={mock}/>);
+        const json = renderer.toJSON();
+
+        expect(json).toMatchSnapshot();
+    })
+
     it("ToDone renders correctly the list", () => {
         render(<ToDone done={mock}/>);
         const todoneElement = screen.getByTestId("todone-id");
