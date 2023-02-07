@@ -12,7 +12,7 @@ describe("To Done test", () => {
         expect(todoneElement).toBeInTheDocument();
     })
 
-    if("[snapshot] ToDone renders correctly", () => {
+    it("[snapshot] ToDone renders correctly", () => {
         const renderer = create(<ToDone done={mock}/>);
         const json = renderer.toJSON();
 

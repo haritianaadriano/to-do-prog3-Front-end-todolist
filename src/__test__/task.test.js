@@ -11,7 +11,7 @@ describe("Task test", () => {
         expect(taskElement).toBeInTheDocument();
     })
 
-    if("[snapshot] Task renders correctly", () => {
+    it("[snapshot] Task renders correctly", () => {
         const renderer = create(<Task todo={todoMock}/>);
         const json = renderer.toJSON();
 
