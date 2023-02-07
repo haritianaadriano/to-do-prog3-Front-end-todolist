@@ -1,4 +1,5 @@
 import {render, cleanup, screen} from "@testing-library/react";
+import {create} from 'react-test-renderer';
 import Task from "../components/Task";
 
 describe("Task test", () => {
