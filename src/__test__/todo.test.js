@@ -2,7 +2,7 @@ import {render, cleanup, screen} from "@testing-library/react";
 import {create} from 'react-test-renderer';
 import ToDo from "../components/ToDo";
 
-describe('Todo', () => {
+describe('Todo test', () => {
     const mocks = [
         'ohatra__1',
         'ohatra__2'
