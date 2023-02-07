@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input test [snapshot] Input renders correctly 1`] = `
+<div>
+  <input
+    data-testid="input-id"
+    onChange={[Function]}
+    placeholder="Enter a task ..."
+  />
+</div>
+`;
