@@ -7,9 +7,7 @@ describe('Todo test', () => {
         'ohatra__1',
         'ohatra__2'
     ]
-
-
-it("renders correctly", () => {
+it("Todo renders correctly", () => {
     const element = render(<ToDo toDoList={mocks} />);
 
     const todoElement = screen.getByTestId("todo-id");
@@ -18,7 +16,7 @@ it("renders correctly", () => {
 })
 
 
-it("[snapshot] renders correctly", () => {
+it("[snapshot] Todo renders correctly", () => {
     const renderer = create(<ToDo toDoList={mocks} />);
     const json = renderer.toJSON();
 
