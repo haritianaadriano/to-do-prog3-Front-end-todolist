@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Task test [snapshot] Task renders correctly 1`] = `
+<div>
+  <li
+    data-testid="task-id"
+  >
+    todo-1
+    <div>
+      <input
+        onChange={[Function]}
+        type="checkbox"
+      />
+    </div>
+  </li>
+</div>
+`;

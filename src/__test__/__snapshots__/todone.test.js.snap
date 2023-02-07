@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`To Done test [snapshot] ToDone renders correctly 1`] = `
+Array [
+  <h3>
+    Done
+  </h3>,
+  <ul
+    data-testid="todone-id"
+  >
+    <li>
+      mock-1
+    </li>
+    <li>
+      mock-2
+    </li>
+  </ul>,
+]
+`;
