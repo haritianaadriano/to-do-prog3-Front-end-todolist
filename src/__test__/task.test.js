@@ -5,6 +5,7 @@ describe("Task test", () => {
     const todoMock = "todo-1";
 
     it("Task appears in document", () => {
+        render(<Task/>);
         const taskElement = screen.getByTestId("task-id");
         expect(taskElement).toBeInTheDocument();
     })
@@ -13,6 +14,6 @@ describe("Task test", () => {
         render(<Task todo={todoMock} />);
         const taskElement = screen.getByTestId("task-id");
 
-        expect(taskElement.textContent).toHaveTextContent(todoMock);
+        expect(taskElement).toHaveTextContent(todoMock);
     })
 })
