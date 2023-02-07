@@ -17,7 +17,7 @@ describe("Input test", () => {
         expect(json).toMatchSnapshot();
     })
 
-    it("Input testing functionnality", () => {
+    it("Input testing on key down", () => {
         render (<Input setInput={() => {}}/>);
         const inputElement = screen.getByPlaceholderText("Enter a task ...");
         fireEvent.change(inputElement, {target: {value: "test"}});
