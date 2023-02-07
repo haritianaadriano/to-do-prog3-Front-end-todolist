@@ -4,7 +4,7 @@ export default function Input({input, setInput}){
             <input 
                 data-testid="input-id"
                 value={input} 
-                placeholder="Make a task"
+                placeholder="Enter a task ..."
                 onChange={e => setInput(e.target.value)}
             />
         </div>
