@@ -1,4 +1,4 @@
-import {render, cleanup, screen} from "@testing-library/react";
+import {render, fireEvent, screen} from "@testing-library/react";
 import {create} from 'react-test-renderer';
 import Input from "../components/Input";
 
@@ -15,5 +15,13 @@ describe("Input test", () => {
         const json = renderer.toJSON();
 
         expect(json).toMatchSnapshot();
+    })
+
+    it("Input testing functionnality", () => {
+        render (<Input setInput={() => {}}/>);
+        const inputElement = screen.getByPlaceholderText("Enter a task ...");
+        fireEvent.change(inputElement, {target: {value: "test"}});
+
+        expect(inputElement.value).toBe("test");
     })
 })
